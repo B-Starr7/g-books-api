@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  
+*{
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body{
+    padding: 0;
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App{
+    display: grid;
+    grid-template-columns:100vw;
+    grid-template-rows: 20vh 10vh 10vh 60vh;
   }
-}
+  
+  .header{
+    background-color: #4A69B5;
+    text-align: center;
+  }
+  .SearchBar{
+      background-color: #15EA33;
+  }
+  
+  .FilterList{
+    background-color: #36C99B;
+  }
+  
+  .BookList{
+    display: grid;
+    background-color: #32CDCA;
+    grid-template-columns:100vw;
+    grid-template-rows: 20vh 20vh 20vh;
+  }
